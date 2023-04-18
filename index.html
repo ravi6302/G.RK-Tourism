@@ -38,7 +38,7 @@
         color:white;
     }
     #text{
-        color:gold;
+        color:rgb(255, 0, 0);
     }
 
     .card-shadow:hover{
@@ -74,11 +74,11 @@
     }
     #tourism{
             margin-left: 30px;
-            text-shadow:3px 3px 1px black;
+            text-shadow:2px 3px 1px black;
         }
     #navcorner{
         border-radius:10px;
-        background: linear-gradient(to top,rgb(30, 37, 168),rgb(143, 115, 182));
+        background: linear-gradient(to top,rgb(8, 0, 255),rgb(198, 159, 252));
     }
     .names{
         color:red;
@@ -124,7 +124,10 @@
             box-shadow:3px 3px 5px gold;
             color:red;
         }
-        
+        .ageheading{
+            color:rgb(255, 0, 0);
+            font-weight:bold;
+        }
         /*Responsive for momile 0-600 px range*/
         @media (0px <= width <= 600px){
            .cardss{
@@ -156,11 +159,17 @@
            }
           .ulbtn li button{
             margin:4%;
-           
           }
           iframe{
             width:500px;
             height:300px;
+          }
+          .bannerimages{
+            height:250px;
+            padding-top:30px;
+          }
+          .cardcontainer{
+            border-radius:20px;
           }
         }
      
@@ -195,15 +204,192 @@
                 } 
                 .ulbtn li button{
                     width:127px;
-                    height:30px;
-                    padding:15px;
-                    text-align: center;
+                    padding:10px;
+                    display: flex;
+                    justify-content: center;
+                    margin-right:20px;
                 } 
-                iframe{
-                    width:400px;
-                    height:270px;
-                }
+                
+
+
            }
+           @media (601px <= width <= 650px) {
+                iframe{
+                    width:410px;
+                    height:310px;
+                }
+                .ulbtn li button{
+            margin-left:30px;
+           }
+        }
+           @media (651px <= width <=700px) {
+            iframe{
+                width:470px;
+                    height:310px;
+            }
+            .ulbtn li button{
+           
+            margin-left:20px;
+           }
+        }
+           @media (701px <= width <=800px) {
+            iframe{
+                width:540px;
+                    height:310px;
+            }
+            .ulbtn li button{
+            padding:10px;
+            margin-left:10px;
+            
+           }
+           }
+           @media (801px <= width <=850px) {
+            iframe{
+                width:590px;
+                    height:310px;
+            }
+           }
+           @media (851px <= width <=886px) {
+            iframe{
+                width:600px;
+                height:400px;
+            }
+            .ulbtn li button{
+            padding:17px;
+           }
+           }
+           @media (887px <= width <=900px) {
+            iframe{
+                width:690px;
+                height:490px;
+                
+            }
+            .ulbtn li button{
+            padding:16px;
+           }
+            }
+           
+           @media (901px <= width <=920px) {
+            iframe{
+                width:705px;
+                height:490px;
+                
+            }
+            .ulbtn li button{
+            padding:16px;
+           }
+        }
+        @media (921px <= width <=950px) {
+            iframe{
+                width:718px;
+                height:490px;
+            }
+            .ulbtn li button{
+            padding:16px;
+           }
+        }
+        @media (951px <= width <=1000px) {
+            iframe{
+                width:745px;
+                height:495px;
+            }
+            .ulbtn li button{
+            padding:16px;
+           }
+        }
+        @media (1001px <= width <=1020px) {
+            iframe{
+                width:790px;
+                height:495px;
+            }
+            .ulbtn li button{
+            padding:17px;
+           }
+        }
+        @media (1021px <= width <=1050px) {
+            iframe{
+                width:810px;
+                height:495px;
+            }
+           .ulbtn li button{
+            padding:17px;
+           }
+        }
+        @media (1051px <= width <=1100px) {
+            iframe{
+                width:840px;
+                height:500px;
+            }
+            .ulbtn li button{
+            padding:17px;
+           }
+        }
+        @media (1101px <= width <=1150px) {
+            iframe{
+                width:880px;
+                height:500px;
+            }
+            .ulbtn li button{
+            padding:17px;
+           }
+        }
+        @media (1151px <= width <=1200px) {
+            iframe{
+                width:925px;
+                height:500px
+            }
+            .ulbtn li button{
+            padding:17px;
+           }
+        }
+        @media (1201px <= width <=1250px) {
+            iframe{
+                width:970px;
+                height:530px;
+            }
+            .ulbtn li button{
+            padding:20px;
+           }
+        }
+        @media (1251px <= width <=1300px) {
+            iframe{
+                width:1010px;
+                height:535px;
+            }
+            .ulbtn li button{
+            padding:20px;
+            
+           }
+        }
+        @media (1301px <= width <=1350px) {
+            iframe{
+                width:1055px;
+                height:535px;
+            }
+            .ulbtn li button{
+            padding:20px;
+            
+           }
+        }
+        @media (1351px <= width <=1400px) {
+            iframe{
+                width:1090px;
+                height:580px;
+            }
+            .ulbtn li button{
+            padding:25px;
+           }
+        }
+        @media (1401px <= width <=1460px) {
+            iframe{
+                width:1140px;
+                height:583px;
+            }
+            .ulbtn li button{
+            padding:25px;
+            
+           }
+        }
 
          /*Responsive for Laptops and large screens 821 to ... px range*/
         @media screen and (width>=886px) {
@@ -264,22 +450,17 @@
             margin-right:10%;
             margin-top:10px;
           }
-          .ulbtn li button{
-            padding: 15px;
-          }
-          iframe{
-            width:900px;
-            height:480px;
-          }
+         
+          
         }
        
     </style>
 </head> 
-<body class="container-fluid bg-danger">
+<body class="container-fluid" style="background-color:gray;">
     <div id="possi">
         <div class="navbar navbar-dark navbar-expand-lg bg-primary fixed-top" id="navcorner"> 
             <h2 class="navbar-brand " id="tourism">Tourism</h2>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" id="toglerbtn">
+            <button class="navbar-toggler bg-dark" data-bs-toggle="collapse" data-bs-target="#menu" id="toglerbtn">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse" id="menu">
@@ -303,17 +484,17 @@
         <div class="carousel slide mt-1" data-bs-ride="carousel"  id="banner">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2500">
-                    <img src="tagpic.jpg" class="w-100" height="400" alt="dont warry image will show in few sec..."> 
+                    <img src="tagpic.jpg" class="w-100 bannerimages" height="400"  alt="dont warry image will show in few sec..."> 
                 </div>
                 <div class="carousel-item" data-bs-interval="2500">
-                    <img src="penk.jpg" class="w-100" height="400" alt="dont warry image will show in few sec...">
+                    <img src="penk.jpg" class="w-100 bannerimages" height="400"  alt="dont warry image will show in few sec...">
                 </div>
                 <div class="carousel-item" data-bs-interval="2500">
-                    <img src="ooty1.jpg" class="w-100" height="400" alt="dont warry image will show in few sec...">
+                    <img src="ooty1.jpg" class="w-100 bannerimages" height="400"  alt="dont warry image will show in few sec...">
                 </div> 
 
                 <div class="carousel-item" data-bs-interval="2500">
-                    <img src="kerala.jpg" class="w-100" height="400" alt="dont warry image will show in few sec...">
+                    <img src="kerala.jpg" class="w-100 bannerimages" height="400"  alt="dont warry image will show in few sec...">
                 </div>
                 <!--angular buttons-->
                 <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner">
@@ -391,7 +572,7 @@
         <!--Date input using row and col-->
         <div class="m-2">
             <div>
-                <label for="name" class="text-warning">Enter Your Age</label>
+                <label for="name" class="ageheading">Enter Your Age</label>
                 <input type="date" class="form-control" name="name" id="shadow5" placeholder="Enter Your Age">
             </div>  
         </div>
@@ -517,7 +698,7 @@
             <div class="frambtn">
                     <ul class="navbar-nav ulbtn">
                         <a href="Maldives.html"class="nav-link" target="framebody">
-                            <li><button type="button" class="rounded-4">About Maldives</button></li>
+                            <li><button type="button" class="rounded-4" >About Mal</button></li>
                         </a>
         
                         <a href="Kerala.html"class="nav-link" target="framebody">
