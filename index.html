@@ -129,6 +129,59 @@
             color:rgb(255, 0, 0);
             font-weight:bold;
         }
+        .ulicons{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           justify-content: space-around;
+           list-style: none;
+           margin-top: 10px;
+           font-size:30px;
+           padding:30px;
+        }
+        .followtext{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            text-shadow:2px 3px 1px black;
+            color:white;
+        } 
+        .fb{
+            color: rgb(65, 65, 209);
+        }
+        .fb:hover{
+            color: rgb(65, 65, 209);
+            font-size:40px;
+            transition:0.5s;
+        }
+        .twi{
+            color:rgb(102, 102, 188);
+        }
+        .twi:hover{
+            color:rgb(102, 102, 188);
+            font-size:40px;
+            transition:0.5s;
+        }
+        .linked{
+            color:rgb(54, 54, 204);
+        }
+        .linked:hover{
+            color:rgb(54, 54, 204);
+            font-size:40px;
+            transition:0.5s;
+        }
+        .insta{
+            color:red;
+        }
+        .insta:hover{
+            color:red;
+            font-size:40px;
+            transition:0.5s;
+        }
+        footer{
+           height: 100%;
+        }
         /*Responsive for momile 0-600 px range*/
         @media (0px <= width <= 600px){
            .cardss{
@@ -157,6 +210,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
            }
           .ulbtn li button{
             margin:4%;
@@ -451,8 +505,7 @@
             margin-right:10%;
             margin-top:10px;
           }
-         
-          
+    
         }
        
     </style>
@@ -470,6 +523,8 @@
                     <li class="nav-item active nav-item-space" ><a href="#genders"class="nav-link">Gender</a></li>
                     <li class="nav-item active nav-item-space" ><a href="#offers" class="nav-link">Check Offers</a></li>
                     <li class="nav-item active nav-item-space" ><a href="#frames" class="nav-link">About places</a></li>
+                    <li class="nav-item active nav-item-space" ><a href="#followme" class="nav-link">Follow On</a></li>
+
                     <li class="nav-item">
                         <div class="input-group">
                             <input type="text" class="form-control">
@@ -720,7 +775,16 @@
                     </ul>
             </div>
         </div>
-       
+       <footer class="bg-dark">
+        <hr>
+        <h3 class="followtext" id="followme">Follow Me On</h3>
+        <ul class="ulicons">
+            <li><a href="https://www.facebook.com/ravikumar.gadala.7"><span class="bi bi-facebook fb"></span></a></li>
+            <li><a href="https://twitter.com/gadala_ravi"><span class="bi bi-twitter twi"></span></a></li>
+            <li><a href="https://www.instagram.com/ravikumar_artgallery/"><span class="bi bi-instagram insta"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/ravi-kumar-gadala-4a2786253/"><span class="bi bi-linkedin linked"></span></a></li>
+        </ul>
+       </footer>
     <script src="../../node_modules/jquery/dist/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body> 
