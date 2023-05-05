@@ -193,6 +193,35 @@
             padding-bottom: 15px;
         }
 
+        .scroll-cards-container{
+            display: flex;
+            overflow-x:auto;
+            scroll-behavior: smooth;
+           
+        }
+
+        .scroll-cards{
+            min-width:200px;
+            height: 200px;
+            background:linear-gradient(to right,rgb(5, 5, 43),rgb(45, 131, 146));
+            margin:10px;
+            border-top-left-radius:30px;
+            border-bottom-right-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scroll-cards-container::-webkit-scrollbar{
+            display:none;
+        }
+
+        .slide-cards-img{
+            border-radius: 50%;
+            height:150px;
+            width: 150px;
+        }
+
         /*Responsive for momile 0-600 px range*/
         @media (0px <= width <= 600px){
            .cardss{
@@ -794,6 +823,19 @@
                         </a>
                     </ul>
             </div>  
+        </div>
+
+        <div class="scroll-cards-container">
+            <div class="scroll-cards"><img src="tagpic.jpg" class="slide-cards-img"></div>
+            <div class="scroll-cards"><img src="kerala.jpg" class="slide-cards-img"></div>
+            <div class="scroll-cards"><img src="ooty.jpg" class="slide-cards-img"></div>
+            <div class="scroll-cards"><img src="goa.jpg" class="slide-cards-img"></div>
+            <div class="scroll-cards"><img src="mal.png" class="slide-cards-img"></div>
+            <div class="scroll-cards"><img src="tagpic.jpg" class="slide-cards-img"></div>
+            <div class="scroll-cards"><img src="kerala.jpg" class="slide-cards-img"></div>
+            <div class="scroll-cards"><img src="ooty1.jpg" class="slide-cards-img"></div>
+            <div class="scroll-cards"><img src="goa.jpg" class="slide-cards-img"></div>
+            <div class="scroll-cards"><img src="mal.png" class="slide-cards-img"></div>
         </div>
        <footer class="bg-dark">
 
